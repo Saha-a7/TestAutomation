@@ -1,0 +1,74 @@
+[
+  {
+    "source": "^Accept the cookies$",
+    "steps": [
+      {
+        "name": "Accept the cookies",
+        "aggregatedDurations": {
+          "average": 0.0774526,
+          "median": 0.0774526
+        },
+        "durations": [
+          {
+            "duration": 0.0774526,
+            "location": "JLLFirstFeature.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^open Browser and enter url$",
+    "steps": [
+      {
+        "name": "open Browser and enter url",
+        "aggregatedDurations": {
+          "average": 3.2903338,
+          "median": 3.2903338
+        },
+        "durations": [
+          {
+            "duration": 3.2903338,
+            "location": "JLLFirstFeature.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^TestCaseID Is \"([^\"]*)\" and TestDataSheet Is \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "TestCaseID Is \"JLL_FirstTest\" and TestDataSheet Is \"JLL\"",
+        "aggregatedDurations": {
+          "average": 0.1270385,
+          "median": 0.1270385
+        },
+        "durations": [
+          {
+            "duration": 0.1270385,
+            "location": "JLLFirstFeature.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on the Country drop down$",
+    "steps": [
+      {
+        "name": "Click on the Country drop down",
+        "aggregatedDurations": {
+          "average": 3.3773933,
+          "median": 3.3773933
+        },
+        "durations": [
+          {
+            "duration": 3.3773933,
+            "location": "JLLFirstFeature.feature:11"
+          }
+        ]
+      }
+    ]
+  }
+]

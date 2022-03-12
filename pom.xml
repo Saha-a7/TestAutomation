@@ -85,7 +85,7 @@
 							<fileSets>
 								<fileSet>
 									<!-- Report directory Path -->
-									<directory>C://TestAutomation1//CucumberFramework//target//ExetentReport</directory>
+									<directory>C://TestAutomation1//TestAutomation1//CucumberFramework//target//ExetentReport</directory>
 									<includes>
 										<!-- Report file name -->
 										<include>TestReport.html</include>

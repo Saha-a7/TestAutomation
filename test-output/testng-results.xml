@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Test Method resides in testRunner.Pharma_PfizerRunner]]>
+      <![CDATA[Test Method resides in testRunner.JLL_JllTestRunner]]>
     </line>
     <line>
-      <![CDATA[Test Method had the following parameters : nullJLL Launching the website first,]]>
+      <![CDATA[Test Method had the following parameters : nullValidate the Workday component,]]>
     </line>
     <line>
       <![CDATA[Test Status: Pass]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-11T19:03:42 IST" name="Default suite" finished-at="2022-02-11T19:04:02 IST" duration-ms="19781">
+  <suite started-at="2022-03-12T16:36:30 IST" name="Default suite" finished-at="2022-03-12T16:37:22 IST" duration-ms="51742">
     <groups>
       <group name="cucumber">
-        <method signature="ExtendedTestNGRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Pharma_PfizerRunner@3fa247d1]" name="feature" class="com.github.mkolisnyk.cucumber.runner.ExtendedTestNGRunner"/>
+        <method signature="ExtendedTestNGRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.JLL_JllTestRunner@1bab8268]" name="feature" class="com.github.mkolisnyk.cucumber.runner.ExtendedTestNGRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-11T19:03:42 IST" name="Default test" finished-at="2022-02-11T19:04:02 IST" duration-ms="19781">
-      <class name="testRunner.Pharma_PfizerRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.Pharma_PfizerRunner@3fa247d1]" started-at="2022-02-11T19:03:42 IST" name="setUpClass" finished-at="2022-02-11T19:03:43 IST" duration-ms="393" status="PASS">
+    <test started-at="2022-03-12T16:36:30 IST" name="Default test" finished-at="2022-03-12T16:37:22 IST" duration-ms="51742">
+      <class name="testRunner.JLL_JllTestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.JLL_JllTestRunner@1bab8268]" started-at="2022-03-12T16:36:30 IST" name="setUpClass" finished-at="2022-03-12T16:36:31 IST" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Pharma_PfizerRunner@3fa247d1]" started-at="2022-02-11T19:03:43 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-02-11T19:04:01 IST" duration-ms="18143" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.JLL_JllTestRunner@1bab8268]" started-at="2022-03-12T16:36:31 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-03-12T16:37:19 IST" duration-ms="48743" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[JLL Launching the website first]]>
+                <![CDATA[Validate the Workday component]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test Method resides in testRunner.Pharma_PfizerRunner]]>
+              <![CDATA[Test Method resides in testRunner.JLL_JllTestRunner]]>
             </line>
             <line>
-              <![CDATA[Test Method had the following parameters : nullJLL Launching the website first,]]>
+              <![CDATA[Test Method had the following parameters : nullValidate the Workday component,]]>
             </line>
             <line>
               <![CDATA[Test Status: Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="teardown1()[pri:0, instance:testRunner.Pharma_PfizerRunner@3fa247d1]" started-at="2022-02-11T19:04:01 IST" name="teardown1" finished-at="2022-02-11T19:04:01 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="teardown1()[pri:0, instance:testRunner.JLL_JllTestRunner@1bab8268]" started-at="2022-03-12T16:37:19 IST" name="teardown1" finished-at="2022-03-12T16:37:19 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown1 -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.Pharma_PfizerRunner@3fa247d1]" started-at="2022-02-11T19:04:01 IST" name="tearDownClass" finished-at="2022-02-11T19:04:02 IST" duration-ms="1035" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.JLL_JllTestRunner@1bab8268]" started-at="2022-03-12T16:37:19 IST" name="tearDownClass" finished-at="2022-03-12T16:37:22 IST" duration-ms="2327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.Pharma_PfizerRunner -->
+      </class> <!-- testRunner.JLL_JllTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

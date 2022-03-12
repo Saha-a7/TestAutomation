@@ -5,13 +5,31 @@
       {
         "name": "Accept the cookies",
         "aggregatedDurations": {
-          "average": 0.0774526,
-          "median": 0.0774526
+          "average": 0.104399485,
+          "median": 0.104399485
         },
         "durations": [
           {
-            "duration": 0.0774526,
-            "location": "JLLFirstFeature.feature:10"
+            "duration": 0.104399485,
+            "location": "JllWorkday.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Locate the HtmlForm component$",
+    "steps": [
+      {
+        "name": "Locate the HtmlForm component",
+        "aggregatedDurations": {
+          "average": 0.117393787,
+          "median": 0.117393787
+        },
+        "durations": [
+          {
+            "duration": 0.117393787,
+            "location": "JllWorkday.feature:10"
           }
         ]
       }
@@ -23,13 +41,13 @@
       {
         "name": "open Browser and enter url",
         "aggregatedDurations": {
-          "average": 3.2903338,
-          "median": 3.2903338
+          "average": 11.409056216,
+          "median": 11.409056216
         },
         "durations": [
           {
-            "duration": 3.2903338,
-            "location": "JLLFirstFeature.feature:9"
+            "duration": 11.409056216,
+            "location": "JllWorkday.feature:7"
           }
         ]
       }
@@ -39,33 +57,69 @@
     "source": "^TestCaseID Is \"([^\"]*)\" and TestDataSheet Is \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "TestCaseID Is \"JLL_FirstTest\" and TestDataSheet Is \"JLL\"",
+        "name": "TestCaseID Is \"JLL_Workday\" and TestDataSheet Is \"JLL\"",
         "aggregatedDurations": {
-          "average": 0.1270385,
-          "median": 0.1270385
+          "average": 0.303965797,
+          "median": 0.303965797
         },
         "durations": [
           {
-            "duration": 0.1270385,
-            "location": "JLLFirstFeature.feature:8"
+            "duration": 0.303965797,
+            "location": "JllWorkday.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Click on the Country drop down$",
+    "source": "^Click on I am Looking for field$",
     "steps": [
       {
-        "name": "Click on the Country drop down",
+        "name": "Click on I am Looking for field",
         "aggregatedDurations": {
-          "average": 3.3773933,
-          "median": 3.3773933
+          "average": 0.453180298,
+          "median": 0.453180298
         },
         "durations": [
           {
-            "duration": 3.3773933,
-            "location": "JLLFirstFeature.feature:11"
+            "duration": 0.453180298,
+            "location": "JllWorkday.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Validate Country dropdown is preset to users current site$",
+    "steps": [
+      {
+        "name": "Validate Country dropdown is preset to users current site",
+        "aggregatedDurations": {
+          "average": 14.206862865,
+          "median": 14.206862865
+        },
+        "durations": [
+          {
+            "duration": 14.206862865,
+            "location": "JllWorkday.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Career nav item$",
+    "steps": [
+      {
+        "name": "Click on Career nav item",
+        "aggregatedDurations": {
+          "average": 5.084486055,
+          "median": 5.084486055
+        },
+        "durations": [
+          {
+            "duration": 5.084486055,
+            "location": "JllWorkday.feature:9"
           }
         ]
       }

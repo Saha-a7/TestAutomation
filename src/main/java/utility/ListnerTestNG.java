@@ -37,7 +37,7 @@ public class ListnerTestNG implements ISuiteListener, ITestListener
 	public void onStart(ISuite arg0) {
 
 		
-		System.out.println("Executiing before suite method");
+		System.out.println("Executing before suite method");
 		try {
 			
 			CommonMethods.closeWebDriverProcess();

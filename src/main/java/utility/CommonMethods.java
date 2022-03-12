@@ -41,8 +41,11 @@ import com.sun.mail.util.MailConnectException;
 import com.vimalselvam.cucumber.listener.Reporter;
 
 import objectRepository.GetObj;
-import pharmaTestSuite.steps.stepsPharma.PfizerTestCaseID;
 import DataReaders.*;
+import JllTestSuite.steps.Steps.Testcasesteps.PfizerTestCaseID;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 
 @SuppressWarnings("unused")
 public class CommonMethods extends GetObj   {
@@ -67,7 +70,31 @@ public class CommonMethods extends GetObj   {
 		this.driver = webDriverFactory.getWebDriver();
 
 	}
-
+	 @Given("^open Browser and enter url$")
+	    public void open_Browser_and_enter_url() throws IOException, Exception {
+		 
+		String url = getDataFromExcel(ModuleName, TestCaseID, "URL");
+		System.out.println(url);
+		
+		driver.get(url);
+		Reporter.addScreenCaptureFromPath(screenshotUtility.getScreenshot(driver));
+		
+	}
+//	 @And("^Click on Advance button$")
+//	    public void click_on_advance_button() throws Throwable {
+//	        element("Advance").click();
+//	    }
+//	 
+//
+//	    @And("^Click on Proceed$")
+//	    public void click_on_proceed() throws Throwable {
+//	        element("Proceed").click();
+	//    }
+	    @When("^Accept the cookies$")
+	    public void accept_the_cookies() throws Throwable {
+		element("AcceptCookies").click();
+	    }
+	    
 
 
 
@@ -126,8 +153,8 @@ public class CommonMethods extends GetObj   {
 
 
 	public static void CopyLogsInArchive()   {
-		String FilePath = "C:\\TestAutomation1\\CucumberFramework\\target\\ExetentReport";
-		String ArchiveFolderPath = "C:\\TestAutomation1\\CucumberFramework\\target\\ExetentReport\\Archive";
+		String FilePath = "C:\\TestAutomation1\\TestAutomation1\\CucumberFramework\\target\\ExetentReport";
+		String ArchiveFolderPath = "C:\\TestAutomation1\\TestAutomation1\\CucumberFramework\\target\\ExetentReport\\Archive";
 
 		File dir = new File(FilePath);
 		String[] files = dir.list();
@@ -327,11 +354,12 @@ public class CommonMethods extends GetObj   {
 	}
 
 	public static void CaseCreation(int n) throws InterruptedException {
-		String exePath = System.getProperty("user.dir")+"\\src\\test\\resources\\WebDrivers\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", exePath);
+		//String exePath = System.getProperty("user.dir")+"\\src\\test\\resources\\WebDrivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
 
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("user-data-dir=C:/Users/Manjunath.Dinesh/AppData/Local/Google/Chrome/User Data/Profile 1");
+		//options.addArguments("user-data-dir=C:/Users/701631/AppData/Local/Google/Chrome/User Data/Profile 10");
+		options.addArguments("--disable-extensions");
 		options.addArguments("--start-maximized");
 
 
@@ -511,7 +539,7 @@ public class CommonMethods extends GetObj   {
 
 			String CaseIDvalue=CaseID.getText();
 			System.out.println(CaseIDvalue);
-			String filepath="C:\\TestAutomation\\CucumberFramework\\src\\test\\resources\\TestData\\CaseIDs.txt";
+			String filepath="C:\\TestAutomation1\\TestAutomation1\\CucumberFramework\\src\\test\\resources\\TestData\\CaseIDs.txt";
 			BufferedWriter bw = null;
 			FileWriter fw = null;
 
@@ -705,7 +733,8 @@ public class CommonMethods extends GetObj   {
 				options.addArguments("disable-infobars");
 				options.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
 				options.setCapability("exit_type", "none");				
-				options.addArguments("user-data-dir=C:/Users/52026740/AppData/Local/Google/Chrome/User Data/Default");
+				//options.addArguments("user-data-dir=C:/Users/701631/AppData/Local/Google/Chrome/User Data/Profile 10");
+				options.addArguments("--disable-extensions");
 
 				WebDriver driver = new ChromeDriver(options);
 				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -861,7 +890,7 @@ public class CommonMethods extends GetObj   {
 
 				String PatientIDvalue=PatientID.getText();
 				System.out.println(PatientIDvalue);
-				String filepath="C:\\TestAutomation1\\CucumberFramework\\src\\test\\resources\\TestData\\PatientIDs.txt";
+				String filepath="C:\\TestAutomation1\\TestAutomation1\\CucumberFramework\\src\\test\\resources\\TestData\\PatientIDs.txt";
 				BufferedWriter bw = null;
 				FileWriter fw = null;
 

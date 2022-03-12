@@ -21,6 +21,7 @@ public class WebDriverFactory {
 	
 	public static WebDriver driver;
 	
+	
 	public static  String browserType = ConfigFile.getConfigValue("Browser").toString();
 			
 			//"chrome";
@@ -39,9 +40,9 @@ public class WebDriverFactory {
 			case "chrome":
 				
 				
-				String exePath = System.getProperty("user.dir")+"\\src\\test\\resources\\WebDrivers\\chromedriver.exe";
+			//	String exePath = System.getProperty("user.dir")+"\\src\\test\\resources\\WebDrivers\\chromedriver.exe";
 				
-				System.setProperty("webdriver.chrome.driver", exePath);
+				System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
 
 				ChromeOptions options = new ChromeOptions();
 				
@@ -52,9 +53,14 @@ public class WebDriverFactory {
 				options.addArguments("--disable-notifications");
 				options.addArguments("disable-infobars");
 				
+				
 				options.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-				options.setCapability("exit_type", "none");				
-				options.addArguments("user-data-dir=C:/Users/Manjunath.Dinesh/AppData/Local/Google/Chrome/User Data/Profile 1");
+				options.setCapability("exit_type", "none");		
+				options.addArguments("--disable-extensions");
+				options.setAcceptInsecureCerts(true);
+				
+			
+				//options.addArguments("user-data-dir=C:/Users/701631/AppData/Local/Google/Chrome/User Data/Profile 10");
 				
 				
 				//options.addArguments("headless","window-size=1400,800"); //to execute in headless mode
@@ -83,9 +89,9 @@ public class WebDriverFactory {
 		public  WebDriver setWebDriver() throws IllegalAccessException {
 			
 			
-		//	WebDriverFactory.browserType="Chrome";
+			//WebDriverFactory.browserType="Chrome";
 		//	WebDriver driver = create("Chrome");
-			//System.out.println("Browser Value from Config File"+ConfigFile.ConfigValue("Browser"));
+		//	System.out.println("Browser Value from Config File"+ConfigFile.ConfigValue("Browser"));
 			WebDriver driver = create(WebDriverFactory.browserType);
 					//create(ConfigFile.ConfigValue("Browser").toString());
 					
@@ -100,7 +106,7 @@ public class WebDriverFactory {
 			return driver;
 		}
 		
-		
+	
 		
 		
 }
